@@ -17,12 +17,15 @@ import java.util.TimeZone;
  */
 public class FinnishWatch implements Watch{
     
-    public TimeSource source = new InternetTimeSource();
+    public TimeSource source = new SystemTimeSource();
     public SimpleDateFormat timeFormatter;
     public TimeZone easternEuropeanTIme;
     
    
-
+    /**
+     * Gets the date from SystemTimeSource and place it in Time Format.
+    * @return 
+     */
     @Override
     public String getTime() {
        
@@ -31,7 +34,10 @@ public class FinnishWatch implements Watch{
         return currentDate.toString();
        
     }
-
+    /**
+     * Gets the date from SystemTimeSource and place it in Date Format.
+    * @return 
+     */
     @Override
     public String getDate() {
         

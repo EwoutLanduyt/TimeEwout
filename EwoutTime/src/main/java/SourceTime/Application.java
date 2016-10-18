@@ -3,30 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Application;
-
-import SourceTime.FinnishWatch;
+package SourceTime;
 
 /**
- * Application class to print on console
+ *
  * @author Ewout
  */
-public class TimeApplication {
+public class Application {
     
-    private FinnishWatch watch;
+    public FinnishWatch watch = new FinnishWatch();
     
-    
-    
-    /** 
-     * Prints the time to the class.
-     * @param args 
-     */
     public static void main(String[] args) {
         
-        
+       
         
         System.out.printf("The time is");
         
         
     }
+    
 }
