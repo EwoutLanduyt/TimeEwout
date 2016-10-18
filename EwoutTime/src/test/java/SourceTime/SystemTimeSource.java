@@ -18,7 +18,8 @@ public class SystemTimeSource implements TimeSource {
 
     @Override
     public Date getTimeMoment() {
-         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+           Date date = new Date();
+        return date;
        /* NTPUDPClient timeClient = new NTPUDPClient();
         InetAddress inetAddress = InetAddress.getByName("time-a.nist.gov");
         TimeInfo timeInfo = timeClient.getTime(inetAddress);
